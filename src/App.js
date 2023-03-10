@@ -1,25 +1,28 @@
-import React from "react";
+import NavBar from "./components/NavBar.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Certifications from "./pages/Certifications.jsx";
+import Projects from "./pages/Projects.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <div className="w-[436px] h-[104px] bg-[#37ADB5] rounded-full blur-[300px] fixed top-[394px] left-[270px]"></div>
-      <div className="w-[169px] h-[413px] bg-[#87515B] rounded-full blur-[300px] fixed top-[438px] left-[642px] -rotate-[53deg]"></div>
-      <div className="mt-[1000px]">
-        <h1 className="text-white">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat. Lorem ipsum dolor sit amet, officia
-          excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-          pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-          excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-          aliquip amet voluptate voluptate dolor minim nulla est proident.
-          Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt
-          ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
-          cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi
-          laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit
-          commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint
-          cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
-        </h1>
+    <div className="">
+      <NavBar />
+      <section className="mt-24 ">
+        <Home />
+      </section>
+      <section className="mt-20">
+        <About />
+      </section>
+      <section className="mt-20">
+        <Projects />
+      </section>
+      <section className="my-20">
+        <Certifications />
+      </section>
+      <div className="fixed top-32 -z-10  left-0 right-0  h-screen flex justify-center">
+        <div className="w-[436px] h-[104px] blur-[300px] bg-[#37ADB5]"></div>
+        <div className="w-[169px] h-[413px] blur-[300px] bg-[#87515B] -rotate-[53deg] "></div>
       </div>
     </div>
   );
